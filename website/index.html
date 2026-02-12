@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monely - Seu Assistente Financeiro Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 6V4C8 3.44772 8.44772 3 9 3H23C23.5523 3 24 3.44772 24 4V6" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 12H28" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="logo-text">Monely</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#how-it-works">Como Funciona</a></li>
+                    <li><a href="#security">Segurança</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Controle suas</span>
+                        <span class="title-line gradient-text">Finanças com IA</span>
+                    </h1>
+                    <p class="hero-description">
+                        O Monely é seu assistente financeiro pessoal inteligente. 
+                        Gerencie gastos, cartões de crédito, metas e receba insights 
+                        personalizados com inteligência artificial.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span>Baixar Agora</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <span>Conhecer Recursos</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">10k+</div>
+                            <div class="stat-label">Usuários Ativos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4.8★</div>
+                            <div class="stat-label">Avaliação</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">R$ 50M+</div>
+                            <div class="stat-label">Gerenciados</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-preview">
+                                    <div class="app-header">
+                                        <div class="app-time">9:41</div>
+                                        <div class="app-icons">
+                                            <span>📶</span>
+                                            <span>📡</span>
+                                            <span>🔋</span>
+                                        </div>
+                                    </div>
+                                    <div class="app-balance">
+                                        <div class="balance-label">Saldo Total</div>
+                                        <div class="balance-amount">R$ 12.450,00</div>
+                                        <div class="balance-change positive">+R$ 1.250 este mês</div>
+                                    </div>
+                                    <div class="app-cards">
+                                        <div class="mini-card card-1">
+                                            <div class="card-name">Nubank</div>
+                                            <div class="card-amount">R$ 2.340</div>
+                                        </div>
+                                        <div class="mini-card card-2">
+                                            <div class="card-name">Inter</div>
+                                            <div class="card-amount">R$ 890</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-shadow"></div>
+                    </div>
+                    <div class="floating-card card-float-1">
+                        <svg class="card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="10" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="15" cy="18" r="2" fill="currentColor"/>
+                            <circle cx="25" cy="18" r="2" fill="currentColor"/>
+                            <path d="M15 26C15 26 17 28 20 28C23 28 25 26 25 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 6L12 10M32 6L28 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="card-text">
+                            <div class="card-title">Insight IA</div>
+                            <div class="card-desc">Você economizou 15% este mês!</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-float-2">
+                        <svg class="card-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="2" fill="currentColor"/>
+                            <path d="M20 6V10M20 30V34M34 20H30M10 20H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="card-text">
+                            <div class="card-title">Meta Atingida</div>
+                            <div class="card-desc">Viagem para Europa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recursos Poderosos</h2>
+                <p class="section-description">
+                    Tudo que você precisa para ter controle total das suas finanças
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Controle em Tempo Real</h3>
+                    <p class="feature-description">
+                        Acompanhe todas as suas transações instantaneamente. 
+                        Receitas, despesas e saldo sempre atualizados.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 14H28" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="10" cy="19" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Gestão de Cartões</h3>
+                    <p class="feature-description">
+                        Gerencie múltiplos cartões de crédito, limites, faturas 
+                        e parcelas em um só lugar.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L18.5 13.5H28L20.5 19L23 28.5L16 23L9 28.5L11.5 19L4 13.5H13.5L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Inteligência Artificial</h3>
+                    <p class="feature-description">
+                        Receba insights personalizados sobre seus gastos e 
+                        sugestões inteligentes para economizar.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 16L12 8L18 14L28 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 4H28V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Metas Financeiras</h3>
+                    <p class="feature-description">
+                        Defina objetivos e acompanhe seu progresso. 
+                        Realize seus sonhos com planejamento.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 12V20M12 16H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Parcelamento Inteligente</h3>
+                    <p class="feature-description">
+                        Sistema completo de controle de parcelas com 
+                        notificações e previsões de pagamento.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 22C19.3137 22 22 19.3137 22 16C22 12.6863 19.3137 10 16 10C12.6863 10 10 12.6863 10 16C10 19.3137 12.6863 22 16 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 4V8M16 24V28M28 16H24M8 16H4M24.5 7.5L21.5 10.5M10.5 21.5L7.5 24.5M24.5 24.5L21.5 21.5M10.5 10.5L7.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Biometria & Segurança</h3>
+                    <p class="feature-description">
+                        Seus dados protegidos com autenticação biométrica 
+                        e criptografia de ponta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="section-description">
+                    Comece a usar em 3 passos simples
+                </p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Baixe e Cadastre-se</h3>
+                        <p class="step-description">
+                            Faça o download do app e crie sua conta em segundos. 
+                            É rápido, fácil e gratuito.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <svg class="visual-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="10" width="40" height="60" rx="6" stroke="currentColor" stroke-width="3"/>
+                            <rect x="30" y="18" width="20" height="3" rx="1.5" fill="currentColor"/>
+                            <rect x="26" y="26" width="28" height="38" rx="2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="step step-reverse">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Adicione suas Transações</h3>
+                        <p class="step-description">
+                            Registre suas receitas, despesas e cartões de crédito. 
+                            Interface intuitiva e rápida.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <svg class="visual-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="25" width="60" height="40" rx="4" stroke="currentColor" stroke-width="3"/>
+                            <path d="M10 35H70" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="20" cy="50" r="3" fill="currentColor"/>
+                            <rect x="30" y="48" width="20" height="4" rx="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Receba Insights Inteligentes</h3>
+                        <p class="step-description">
+                            Nossa IA analisa seus hábitos e oferece dicas 
+                            personalizadas para você economizar mais.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <svg class="visual-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="50" height="50" rx="8" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="28" cy="35" r="4" fill="currentColor"/>
+                            <circle cx="52" cy="35" r="4" fill="currentColor"/>
+                            <path d="M28 52C28 52 32 56 40 56C48 56 52 52 52 52" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M15 12L20 20M65 12L60 20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="ai-content">
+                <div class="ai-text">
+                    <div class="ai-badge">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="7" cy="9" r="1" fill="currentColor"/>
+                            <circle cx="13" cy="9" r="1" fill="currentColor"/>
+                            <path d="M7 14C7 14 8.5 15.5 10 15.5C11.5 15.5 13 14 13 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M3 3L5 5M17 3L15 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Powered by AI
+                    </div>
+                    <h2 class="ai-title">Inteligência Artificial que Entende Você</h2>
+                    <p class="ai-description">
+                        Nossa IA analisa seus padrões de gastos e oferece insights 
+                        personalizados para ajudar você a tomar melhores decisões financeiras.
+                    </p>
+                    <ul class="ai-features-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Análise automática de padrões de gastos</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Sugestões personalizadas de economia</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Alertas inteligentes de gastos incomuns</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Previsões de fluxo de caixa</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ai-visual">
+                    <div class="ai-chat-box">
+                        <div class="chat-message user">
+                            Como estão meus gastos este mês?
+                        </div>
+                        <div class="chat-message ai">
+                            Seus gastos estão 15% abaixo da média! 🎉
+                            Você economizou R$ 450 em alimentação.
+                            Continue assim e você atingirá sua meta 
+                            de viagem 2 meses antes do previsto!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security" id="security">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Segurança em Primeiro Lugar</h2>
+                <p class="section-description">
+                    Seus dados financeiros protegidos com tecnologia de ponta
+                </p>
+            </div>
+            <div class="security-grid">
+                <div class="security-item">
+                    <svg class="security-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="28" width="24" height="20" rx="2" stroke="currentColor" stroke-width="3"/>
+                        <path d="M24 28V20C24 15.5817 27.5817 12 32 12C36.4183 12 40 15.5817 40 20V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="32" cy="38" r="3" fill="currentColor"/>
+                        <path d="M32 41V43" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Criptografia</h3>
+                    <p>Dados criptografados de ponta a ponta</p>
+                </div>
+                <div class="security-item">
+                    <svg class="security-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="3"/>
+                        <path d="M20 44C20 38.4772 24.4772 34 30 34H34C39.5228 34 44 38.4772 44 44V48H20V44Z" stroke="currentColor" stroke-width="3"/>
+                        <path d="M32 24V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                    </svg>
+                    <h3>Biometria</h3>
+                    <p>Acesso com digital ou reconhecimento facial</p>
+                </div>
+                <div class="security-item">
+                    <svg class="security-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 12L44 18V30C44 38 40 44 32 50C24 44 20 38 20 30V18L32 12Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <path d="M28 32L30 34L36 28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Proteção JWT</h3>
+                    <p>Autenticação segura com tokens</p>
+                </div>
+                <div class="security-item">
+                    <svg class="security-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="16" y="20" width="32" height="28" rx="2" stroke="currentColor" stroke-width="3"/>
+                        <path d="M24 20V16C24 15.4477 24.4477 15 25 15H39C39.5523 15 40 15.4477 40 16V20" stroke="currentColor" stroke-width="3"/>
+                        <path d="M24 30H40M24 36H40M24 42H32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Backup Automático</h3>
+                    <p>Seus dados sempre seguros e recuperáveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Pronto para Transformar suas Finanças?</h2>
+                <p class="download-description">
+                    Junte-se a milhares de usuários que já estão no controle do seu dinheiro
+                </p>
+                <div class="download-buttons">
+                    <a href="#" class="store-button store-button-primary">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 3.5L20 16L4 28.5V3.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M4 3.5L20 16L28 11L10 3L4 3.5Z" fill="currentColor" opacity="0.3"/>
+                            <path d="M4 28.5L20 16L28 21L10 29L4 28.5Z" fill="currentColor" opacity="0.3"/>
+                            <path d="M20 16L28 11V21L20 16Z" fill="currentColor" opacity="0.5"/>
+                        </svg>
+                        <div class="store-text">
+                            <div class="store-label">Disponível no</div>
+                            <div class="store-name">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 6V4C8 3.44772 8.44772 3 9 3H23C23.5523 3 24 3.44772 24 4V6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 12H28" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span class="logo-text">Monely</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Seu assistente financeiro inteligente
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#features">Recursos</a></li>
+                            <li><a href="#security">Segurança</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacidade</a></li>
+                            <li><a href="terms.html">Termos de Uso</a></li>
+                            <li><a href="about.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="mailto:contato@monely.app">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monely. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacidade</a>
+                    <a href="terms.html">Termos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
